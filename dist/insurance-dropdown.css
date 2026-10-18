@@ -6,9 +6,8 @@
 .insurance-nav-toggle:hover{background:#e9f0e5;color:#087578}
 .insurance-menu{position:absolute;top:100%;left:-18px;width:330px;padding-top:12px;z-index:40}
 .insurance-menu ul{list-style:none;margin:0;padding:9px;background:#fffefa;border-radius:12px;box-shadow:0 12px 28px #143c5026}
-.site-header .insurance-menu a{display:block;padding:13px 14px;border-radius:7px;font-size:14px;line-height:1.4;color:#143c50;font-weight:700}
+.site-header .insurance-menu a{display:block;min-height:44px;padding:13px 14px;border-radius:7px;font-size:14px;line-height:1.4;color:#143c50;font-weight:700}
 .insurance-menu a span{display:block}
-.site-header .insurance-menu a small{display:block;margin-top:5px;font-size:12px;font-weight:400;line-height:1.5;color:#586f75}
 .site-header .insurance-menu a:hover,.site-header .insurance-menu a[aria-current]{background:#edf3e8;color:#087578}
 .site-header .desktop-nav{gap:20px}
 .insurance-nav-mobile{display:grid;grid-template-columns:1fr 44px}
