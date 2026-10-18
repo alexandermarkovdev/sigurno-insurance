@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+node_modules/
+.openai/
+sources/
+*.tar.gz
