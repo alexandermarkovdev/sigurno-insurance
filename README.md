@@ -22,4 +22,6 @@ Forms are demonstrations: they validate inputs and show a local review, with an 
 
 This repository is the public website mirror. A local post-commit hook on the source project copies the current `dist/`, commits changes and pushes to `main`. Project references, credentials, hosting configuration and private source history are excluded. Ordinary edits made in a clone of this public repository can be committed and pushed normally.
 
-The repository does not configure GitHub Pages or change the existing website's hosting.
+Live mobile-test website: https://alexandermarkovdev.github.io/sigurno-insurance/
+
+The local sync step pushes the source to `main` and the prepared website to `gh-pages`, which GitHub Pages publishes automatically. `scripts/build-pages.py` prepares project-relative asset and navigation paths in `_site/`; the original `dist/` stays compatible with the existing website hosting.
