@@ -22,6 +22,6 @@ Forms are a demo: they validate inputs and show a realistic "sent" confirmation,
 
 This repository is the public website mirror. A local post-commit hook on the source project copies the current `dist/`, commits changes and pushes to `main`. Project references, credentials, hosting configuration and private source history are excluded. Ordinary edits made in a clone of this public repository can be committed and pushed normally.
 
-Live mobile-test website: https://alexandermarkovdev.github.io/sigurno-insurance/
+Live mobile-test website: https://alexandermarkovdev.github.io/zastrahovka/
 
 The local sync step pushes the source to `main` and the prepared website to `gh-pages`, which GitHub Pages publishes automatically. `scripts/build-pages.py` prepares project-relative asset and navigation paths in `_site/`; the original `dist/` stays compatible with the existing website hosting.
