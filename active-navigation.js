@@ -7,8 +7,8 @@
   const chapters=ids.map(id=>({id,node:document.getElementById(id)})).filter(x=>x.node);
   function linkChapter(link){
     const url=new URL(link.href,location.href);
-    if(url.pathname==='/sigurno-insurance/kontakti/')return 'contacts';
-    return url.pathname==='/sigurno-insurance/'?url.hash.slice(1):'';
+    if(url.pathname==='/zastrahovka/kontakti/')return 'contacts';
+    return url.pathname==='/zastrahovka/'?url.hash.slice(1):'';
   }
   const row=document.querySelector('.site-header .header-inner');
   let scheduled=false;
