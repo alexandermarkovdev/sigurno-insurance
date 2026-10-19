@@ -45,3 +45,11 @@ html{scrollbar-gutter:stable}
 .site-header .desktop-nav>a[aria-current]::after,.site-header .insurance-nav-desktop>a[aria-current]::after{content:'';position:absolute;left:0;right:0;bottom:-9px;height:2px;background:#087578;border-radius:1px}
 .site-header .insurance-nav:has(>a[aria-current])>.insurance-nav-toggle{color:#087578}
 .site-header .mobile-nav>a[aria-current],.site-header .insurance-nav-mobile>a[aria-current]{color:#087578;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:7px}
+/* Mobile menu: call button, scroll hint when items continue below, page behind stays still */
+.site-header .mobile-nav>.mobile-nav-call{display:flex;justify-content:center;align-items:center;gap:10px;min-height:52px;margin-top:16px;padding:12px 18px;font-size:16px;font-weight:750;text-decoration:none}
+@media(max-width:860px){
+.site-header .mobile-nav{position:absolute;top:100%;left:0;right:0;box-shadow:0 18px 30px #143c501f}
+html:has(.site-header .menu-toggle[aria-expanded="true"]){overflow:hidden}
+.site-header .mobile-nav{background:linear-gradient(#fefbef 30%,#fefbef00) center top/100% 40px no-repeat local,linear-gradient(#fefbef00,#fefbef 70%) center bottom/100% 40px no-repeat local,linear-gradient(#143c5024,#143c5000) center top/100% 14px no-repeat scroll,linear-gradient(#143c5000,#143c5024) center bottom/100% 14px no-repeat scroll,#fefbef}
+}
+

@@ -2,3 +2,7 @@
 
 .go-lab #coverage{scroll-margin-top:154px}@media(max-width:860px){.go-lab #coverage{scroll-margin-top:150px}}
 .product-story .go-lab .gl-section,.product-story .go-lab #coverage{scroll-margin-top:0}
+/* Example topics read as a list, not as links */
+.gl-three-examples{color:#143c50}
+.gl-three-examples span{display:inline-flex;align-items:center;gap:10px}
+.gl-three-examples span::before{content:"";width:8px;height:8px;border-radius:50%;background:#a9bc50;flex-shrink:0}

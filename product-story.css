@@ -4,3 +4,4 @@
 
 .product-story .quote-intro h2{font-size:clamp(35px,3.6vw,53px);font-weight:800;line-height:1.12;letter-spacing:-.035em}
 @media(max-width:760px){.product-story .quote-intro h2{font-size:33px}}
+@media(max-width:360px){.product-story h1{font-size:34px}}
