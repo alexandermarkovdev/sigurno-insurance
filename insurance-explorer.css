@@ -35,3 +35,10 @@ html:has(.home-page){scroll-padding-top:var(--insurance-header-height,91px)}
 .index-list button[aria-selected=true] .icon{opacity:1}
 @media(hover:hover){.index-list button:hover .icon{opacity:.45}.index-list button[aria-selected=true]:hover .icon{opacity:1}}
 @media(max-width:760px){.index-list button .icon{transform:rotate(90deg)}}
+/* Choosing a product changes colour and content only: the row's text stays put and the panel keeps its height */
+.index-list button[aria-selected=true]{padding-left:0}
+.index-list button:hover{box-shadow:-18px 0 0 #eff2e3}
+.index-list button[aria-selected=true],.index-list button[aria-selected=true]:hover{box-shadow:-18px 0 0 #eaf0db}
+@media(max-width:760px){.index-list button:hover{box-shadow:-8px 0 0 #eff2e3}.index-list button[aria-selected=true],.index-list button[aria-selected=true]:hover{box-shadow:-8px 0 0 #eaf0db}}
+@media(prefers-reduced-motion:no-preference){.index-list button{transition:background-color .2s ease,color .2s ease,box-shadow .2s ease}}
+.stage-caption p{min-height:calc(3 * 1.7em)}
