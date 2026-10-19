@@ -17,3 +17,4 @@
 @media(min-width:1000px){.quote-chapter{min-height:calc(100svh - var(--insurance-header-height,91px));display:flex;flex-direction:column}.quote-chapter-layout{flex:1}}
 @media(max-width:1100px){.quote-chapter-layout{gap:35px}.quote-paper{padding:26px}}
 @media(max-width:760px){.quote-chapter{padding:36px 0}.quote-chapter-layout{grid-template-columns:1fr;gap:32px}.quote-intro h2{font-size:33px}.quote-intro>p{font-size:13px}.quote-still-life{max-height:260px;margin:22px auto}.quote-phone{font-size:21px}.quote-paper{padding:24px 18px}.quote-paper .quote-form .field-pair{grid-template-columns:1fr 1fr}.quote-paper .quote-form .field-pair label+label{margin-top:0}}
+@media(max-width:360px){.quote-paper{padding-inline:12px}.quote-paper .quote-form select{padding-inline:10px 4px}}

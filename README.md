@@ -12,11 +12,11 @@ Open http://localhost:8080/. Serve `dist/` as the website root so navigation and
 
 ## Pages
 
-Homepage, six individual insurance products, claims guidance and contact information. The menu uses Гражданска отговорност, Каско, Имуществени, Медицински, Живот and Пенсионни, with full titles on each product page. Three earlier overview/contact routes are retained.
+Homepage, six individual insurance products, claims guidance and contact information. The menu uses Гражданска отговорност, Каско, Имуществени, Медицински, Живот and Пенсионни, with full titles on each product page. The earlier /kontakti/ contact route is retained.
 
 Business: бул. „Марица“ 20, Стамболийски 4210, Пловдивска област, България. Phone: 089 597 0516. Hours: every day 08:00–19:00.
 
-Forms are demonstrations: they validate inputs and show a local review, with an optional download. They do not transmit requests, issue policies or accept payments. Email office@example.bg is a placeholder.
+Forms are demonstrations: they validate inputs and show a local review, with an optional download. They do not transmit requests, issue policies or accept payments.
 
 ## Updates
 
