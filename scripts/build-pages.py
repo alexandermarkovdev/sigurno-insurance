@@ -7,7 +7,7 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
 
 root = Path(__file__).resolve().parents[1]
-repository = os.environ.get('GITHUB_REPOSITORY', 'alexandermarkovdev/zastrahovka').split('/')[-1]
+owner, repository = os.environ.get('GITHUB_REPOSITORY', 'alexandermarkovdev/zastrahovka').split('/')[-2:]
 base = '/' + repository + '/'
 output = root / '_site'
 output.mkdir(exist_ok=True)
@@ -22,6 +22,8 @@ for file in output.rglob('*'):
     if file.name == 'insurance-explorer.js':
         text = text.replace("+p[0]+'" + base + "'", "+p[0]+'/'")
     text = re.sub(r'url\(/(?!/)', 'url(' + base, text)
+    # Link previews (WhatsApp, Viber, Facebook) need an absolute image URL.
+    text = text.replace('property="og:image" content="/', 'property="og:image" content="https://' + owner + '.github.io/')
     # The preview's forms only simulate sending, so keep it out of search results.
     if file.suffix.lower() == '.html' and 'name="robots"' not in text:
         text = text.replace('<head>', '<head><meta name="robots" content="noindex">', 1)
