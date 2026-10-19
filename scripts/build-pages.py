@@ -22,6 +22,9 @@ for file in output.rglob('*'):
     if file.name == 'insurance-explorer.js':
         text = text.replace("+p[0]+'" + base + "'", "+p[0]+'/'")
     text = re.sub(r'url\(/(?!/)', 'url(' + base, text)
+    # The preview's forms only simulate sending, so keep it out of search results.
+    if file.suffix.lower() == '.html' and 'name="robots"' not in text:
+        text = text.replace('<head>', '<head><meta name="robots" content="noindex">', 1)
     file.write_text(text, encoding='utf-8')
 (output / '.nojekyll').touch()
 

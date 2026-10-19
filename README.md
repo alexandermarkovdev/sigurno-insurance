@@ -16,7 +16,7 @@ Homepage, six individual insurance products, claims guidance and contact informa
 
 Business: бул. „Марица“ 20, Стамболийски 4210, Пловдивска област, България. Phone: 089 597 0516. Hours: every day 08:00–19:00.
 
-Forms are demonstrations: they validate inputs and show a local review, with an optional download. They do not transmit requests, issue policies or accept payments.
+Forms are a demo: they validate inputs and show a realistic "sent" confirmation, but nothing is transmitted. Connect them to a real delivery method (email form service, SMS/Viber) before the site goes on the client's own domain. The GitHub Pages preview is marked noindex for this reason.
 
 ## Updates
 
